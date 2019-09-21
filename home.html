@@ -1,67 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <meta name="author" content="Chiranjit Biswas" >
     <meta name="description" content="OurClientSuccess is a web development and marketing company that provides solution for small to large companies." >
-    <meta name="keywords" content="chiranjit,chiranjit biswas, homepage,software developer, programmer,ourclientsuccess,IT company,IT industry,Website designing and developing,Website designing and developing company in kolkata" >
+    <meta name="keywords" content="chiranjit,chiranjit biswas, personal website,website,software company,software,web design" >
     <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=9" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta property="og:image" content="logotransparent.png">
-    <meta name="theme-color" content="#0099CC">
-	<title>
-		OurClientSuccess
-	</title>
-		<style>
-		.logo-main-div{
-			width:1200px;
-			height:100%;
-			margin:0px auto;
-			position:relative;
-			
+    <meta name="theme-color" content="#ffffff">
+	<meta property="og:image" content="bower_components/img/logo.png">
+
+  <title>OurClientSuccess | Home</title>
+	<style>
+		 #topBtn
+		 {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			color:white;
+			width: 50px;
+			height: 50px;
+			display: table;
+			background:rgba(48,162,216,0.5);
+			color: #fff;
+			text-align: center;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			border-radius: 4px;
+			z-index:9999;
+		}
+
+		#topBtn:hover {
+		  background: rgba(0, 0, 0, 0.5);
+		}
+
+		
+		/* Navbar */
+		.nav-item{
+			padding:0px 10px;
+			font-family: 'Questrial', sans-serif;
+		}
+		.nav-request-btn{
+			background-color:#33b5e5;
+			color:white !important;
+		}
+		/* Navbar End*/
+		
+		/* image */
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+			.back-image {
+				width:100%;
+				height:600px;
+				background-position: center;
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+				position:relative;
 			}
-			.big-s{
-			background-color: #eee;
-background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-background-image: -webkit-linear-gradient(white 2px, transparent 2px),
-                  -webkit-linear-gradient(0, white 2px, transparent 2px),
-                  -webkit-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-                  -webkit-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);
-background-image: -moz-linear-gradient(white 2px, transparent 2px),
-                  -moz-linear-gradient(0, white 2px, transparent 2px),
-                  -moz-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-                  -moz-linear-gradient(0, rgba(255,255,255,.3) 1px, transparent 1px);
-background-image: linear-gradient(white 2px, transparent 2px),
-                  linear-gradient(90deg, white 2px, transparent 2px),
-                  linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
--pie-background: linear-gradient(white 2px, transparent 2px) -2px -2px / 100px,
-                 linear-gradient(90deg, white 2px, transparent 2px) -2px -2px / 100px,
-                 linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,
-                 linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px) -1px -1px / 20px,
-                 #269;
-behavior: url(/pie/PIE.htc);}
-		
-	
-		
+		} 
 
-		</style>
-	
-	</head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,900i" rel="stylesheet">
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+			.back-image {
+				width:100%;
+				height:600px;
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+				position:relative;
+			}
+		} 
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body class="big-s">
-	<div style="width:100%;text-align:center">
-		<img src="ocslogo.png" style="height:60px;margin:150px 0px 0px 0px">
-		<br>
-		<div style="padding-top:10px;font-family: 'Raleway', sans-serif;line-height:25px">
-			<b>We Will be back with something Amazing !<br>
-			 For further details please contact <a target="blank" href="https://chiranjit.dev/" title="Chiranjit's website" style="text-decoration:none;color:red">Chiranjit</a>
-.</b>
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+			.back-image {
+				width:100%;
+				height:400px;
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+				position:relative;
+			}
+		} 
+
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+			.back-image {
+				width:100%;
+				height:500px;
+				
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+				position:relative;
+			}
+		} 
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1200px) {
+			.back-image {
+				width:100%;
+				height:500px;
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+				position:relative;
+			}
+		}
+		.back-img-div{
+			position:absolute;
+			top:0%;
+			left:0%;
+			width:100%;
+			height:100%;
+			background-color:rgba(0, 0, 50,0.5);
+			text-align:center;
+			border-bottom:10px solid #33b5e5;
+		}
+		.back-img-txt{
+			margin-top:250px;
+			text-align:center;
+			color:white;
+			font-family: 'Questrial', sans-serif;
+		}
+		.back-img-btn{
+			color:white !important;
+			padding:10px !important;
+			border:2px solid white !important;
+			text-decoration:none !important;
+			-webkit-transition: border 0.5s,color 0.5s; /* Safari */
+			transition: border 0.5s,color 0.5s;
+		}
+		.back-img-btn:hover{
+			border:2px solid #00e5ff !important;
+			color: #00e5ff !important;
+		}
+		/* image End*/
+		/* About */
+		#about{
+			border:1px solid transparent;
+		}
+		.about-row{
+			margin:100px 0px;
+			text-align:center;
+			font-family: 'Questrial', sans-serif;
+		}
+		.about-head{
+			text-align:centre;
+			width:100%;
+			color:#777;
+		}
+		.about-txt{
+			color:#888;
+			line-height:38px;
+			font-size:22px;
+		}
+		.about-image{
+				width:100%;
+				height:500px;
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+				background-position:20% 100%;
+				margin:50px 0px;
+			
+		}
+		/* About End*/
+		/* Product*/
+		.product-main{
+			background-color:#e3f2fd;
+			width:100%;
+		}
+		.product-row{
+			padding:100px 0px;
+			text-align:center;
+			font-family: 'Questrial', sans-serif;
+		}
+		.product-head{
+			text-align:centre;
+			width:100%;
+			color:#777;
+			margin-bottom:50px;
+		}
+		.product-items{
+			padding:20px;
+			margin-top:25px;
+		}
+		.product-items-div{
+			border:2px solid #2196f3;
+			width:100%;
+			height:100px;
+			position:relative;
+			text-align:center;
+			background-color:white;
+			color:#2196f3;
+			line-height:40px;
+			font-size:20px;
+			cursor:pointer;
+		}
+		.product-items-div:hover .product-items-icon{
+			background-color:#2196f3;
+			color:white;
+		}
+		.product-items-icon-div{
+			position:absolute;
+			width:100%;
+			top:-50px;
+			height:0px;
+			
+			
+			
+		}
+		.product-items-icon {
+			margin:auto;
+			border-radius:50%;
+			font-size:35px;
+			line-height:80px;
+			width:80px;
+			height:80px;
+			background-color:white;
+			border:2px solid #2196f3;
+			color:#2196f3;
+			text-align:center;
+			-webkit-transition: background-color 0.5s; /* Safari */
+			transition: background-color 0.5s;
+		}
+		/* Product End*/
+		/* demo*/
+		.demo-main{
+			background-color:#efe;
+			width:100%;
+		}
+		#demo{
+			padding:100px 0px;
+			text-align:center;
+			font-family: 'Questrial', sans-serif;
+		}
+		.demo-head-big{
+			text-align:centre;
+			width:100%;
+			color:#777;
+		}
+		.demo-head-small{
+			text-align:centre;
+			width:100%;
+			color:#999;
+			margin-bottom:20px;
+		}
+		.form-div{
+			background-color:white;
+			border-radius:15px;
+			border:1.45px solid #23ccef;
+			box-shadow:0px 4px 5px 0px #ccc;
+		}
+		.form-div-content{
+			padding:15px 15px 0px 15px;
+		}
+		.form-div-main{
+			padding-top:30px;
+		}
+		.form-btm-div{
+			margin:30px 0px;
+		}
+		.form-btm{
+			background-color:#23ccef;
+			color:white;
+		}
+		/* demo End*/
+		/* contact */
+		
+		#contact{
+			 background-color:#000832;
+			 color:white;
+			 font-family: 'Questrial', sans-serif;
+		}
+		.contact-row{
+			padding-bottom:50px;
+			padding-top:80px;
+		}
+		.contact-home-icon{
+			font-size:30px !important;
+			color:#33b5e5 !important;
+		}
+		.contact-office-head{
+			padding-left: 20px !important;
+			font-size:22px;
+			color:#33b5e5;
+			margin-bottom:10px;
+		}
+		.contact-address{
+			padding-left: 20px !important;
+		}
+		.contact-contact-head{
+			padding-left: 25px !important;
+			font-size:22px;
+			color:#33b5e5;
+			margin-bottom:10px;
+		}
+		.contact-details{
+			padding-left: 25px !important;
+		}
+		.contact-details-info{
+			font-size:15px;
+			color:#ffffff;
+		}
+		.contact-mail-info{
+			text-decoration:none;
+			color:white !important;
+			text-decoration:none !important;
+		}
+		.contact-stay{
+			font-size:22px;
+			color:#33b5e5;
+		}
+		.logo-padding{
+			padding-right: 15px !important;
+		}
+		.logo-div{
+			padding-left:25px;
+		}
+		/* contact End*/
+		/* Footer*/
+		
+		.footer-div{
+			background-color:#000832;
+			border-top:2px solid #33b5e5;
+			color:white;
+			padding:15px 10px;
+			font-family: 'Questrial', sans-serif;
+		}
+		.footer-row{
+			text-align:center;
+			width:100%;
+		}
+		
+		/* Footer End*/
+		/* Modal*/
+		.modal-main{
+			position:fixed;
+			top:0%;
+			left:0%;
+			background-color:rgba(0,0,0,0.1);
+			width:100%;
+			height:100%;
+			z-index:9999;
+			display:none;
+		}
+		.modal-container{
+			height:100%;
+			padding-top: 25vh;
+		}
+		.modal-div{
+			background-color:white;
+			width:100%;
+			border-radius:15px;
+			border:2px solid #2196f3;
+		}
+		
+		.modal-div-body{
+			padding:20px 40px 40px 40px;
+			color:#2196f3;
+			font-family: 'Questrial', sans-serif;
+			position:relative;
+		}
+		.modal-close-btn{
+			color:#ff4444;
+			font-size:30px !important;
+			position:absolute;
+			top:3px;
+			right:6px;
+			cursor:pointer;
+		}
+		.modal-div-contain{
+			margin-top:10px;
+		}
+		/* Modal End*/
+		
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			/* display: none; <- Crashes Chrome on hover */
+			-webkit-appearance: none;
+			margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+		}
+
+		input[type=number] {
+			-moz-appearance:textfield; /* Firefox */
+		}
+		
+		
+	</style>
+  	  <!-- flexraries CSS Files -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="page-top">
+	<button onclick="topFunction()" id="topBtn" style="font-size: 25px; display: block;" title="Go to top">
+		<span class="fa fa-arrow-up"></span>
+	</button>
+	<!--navbar-->
+		<nav class="navbar navbar-expand-md navbar-light  fixed-top" style="background-color:rgba(255,255,255,0.8)">
+		  <a class="navbar-brand" href="#"><img onclick="topFunction()" src="bower_components/img/ocslogo.png" style="height:55px;"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto navbar-right">
+			</ul>
+			 <ul class="nav navbar-nav navbar-right">
+			   <li class="nav-item ">
+				<a class="nav-link" href="#" onclick="scrolldiv('about')">About Us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#" onclick="scrolldiv('product')">Products</a>
+			  </li>
+			  <li class="nav-item d-none d-lg-block ">
+				<a class="nav-link nav-request-btn" href="under_construction.html" onclick="scrolldiv('demo')" >Request a demo</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#" onclick="scrolldiv('contact')">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+		<div class="back-image" style="background-image: url('bower_components/img/background.jpeg');">
+			<div class="back-img-div">
+				<h1 class="back-img-txt">We Design Your Dreams</h1>
+				<br><a href="under_construction.html" class="back-img-btn" onclick="scrolldiv('demo')">Request a demo</a>
+			</div>
+		</div>
+	<!--/ About Section /-->
+	  <div class="container" id="about"  >
+		<div  class="about-row row"  >
+				<h1 class="about-head">About Us</h1>
+				<h3 class="about-txt">
+					OurClientSuccess is a web development and marketing company that provides solution for small to large companies.We believe that <span style="color:#33b5e5;">Clients' success</span> and satisfaction are our success. We give the customers ultimate satisfaction of digital Marketing. 
+				</h3>
+				
+				<div class="about-image" style="background-image: url('bower_components/img/about.jpeg');">
+				</div>
+				<h3 class="about-txt">
+					Our zeal to give customers better quality of Websites with better graphics design and some exciting features at competitive price which put us in high reputation in the market.
+				</h3>
+		</div>
+	   </div>
+	<!--/ About Section end /-->
+	<!--/ product Section /-->
+	<div class="product-main">
+	 <div class="container"  id="product">
+		<div  class="product-row row"  >
+			<h1 class="product-head">Our Awesome Services</h1>
+				<div class="col-lg-4 col-md-6 product-items" >
+					<div class="product-items-div">
+						<div class="product-items-icon-div">
+							<div class="product-items-icon" ><i class="fa fa-tv"> </i></div>
+							Web Development
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 product-items" >
+					<div class="product-items-div">
+						<div class="product-items-icon-div">
+							<div class="product-items-icon" ><i class="fa fa-picture-o"> </i></div>
+							Website Design
+						</div>
+					</div>
+				</div><div class="col-lg-4 col-md-6 product-items" >
+					<div class="product-items-div">
+						<div class="product-items-icon-div">
+							<div class="product-items-icon" ><i class="fa fa-wrench"> </i></div>
+							Website Maintenance
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 product-items" >
+					<div class="product-items-div">
+						<div class="product-items-icon-div">
+							<div class="product-items-icon" ><i class="fa fa-cloud-upload"> </i></div>
+							Website Hosting
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 product-items" >
+					<div class="product-items-div">
+						<div class="product-items-icon-div">
+							<div class="product-items-icon" ><i class="fa fa-suitcase"> </i></div>
+							Online Marketing
+						</div>
+					</div>
+				</div>
+		</div>
+   </div>
+   </div>
+	<!--/ product Section end /-->
+	
+	<!--/ contact Section /-->
+	<div class="container-fluid" id="contact">
+		<div class="row contact-row">
+			<div class="col-sm-4 " >
+			  <div class="row">
+				<div class="col-sm-1"><i class="fa fa-home slideanim slide contact-home-icon" ></i></div>
+				<div class="col-sm-10 contact-office-head" >Office address</div>
+			  </div>
+			 
+			  <div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 contact-address" >
+					<p>Boral Bhattacharjee Para,Near Shakti Sangha Club,P.O.- Boral,Kolkata - 700154,<br>West Bengal,India
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-sm-4" >
+			  <div class="row">
+				<div class="col-sm-1"><i class="fa fa-phone slideanim slide contact-home-icon" ></i></div>
+				<div class="col-sm-10 contact-contact-head" >Contact Us</div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 contact-details" >
+					 <p><i class="fa fa-envelope slideanim slide contact-details-info" ></i><a class="contact-mail-info" target="_blank" href="" title="OurClientSuccess on Email"> ourclientsuccess@gmail.com</a><br>
+					 <i class="fa fa-phone slideanim slide contact-details-info"></i> +91 8272975171 / +91 8335960861</p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-sm-4">
+			  <div class="row">
+				<div   class="col-sm-10 contact-stay">Stay in Touch</div>
+			  </div>
+			  <div class="row logo-div" >
+					<font size="6" color="#ffffff"><i class="fa fa-facebook logo-padding" ></i></font>
+					<font size="6" color="#00adef"><i class="fa fa-envelope logo-padding" ></i></font>
+					<font size="6" color="#e17304"><i class="fa fa-linkedin logo-padding" ></i></font>
+			  </div>
+			</div>
 		</div>
 		
-	</div>
+  </div>
+		
+	<!--/ Contact section End/-->
+	<!--/ footer section/-->
+		<footer class="footer-div">
+		  <div class="row footer-row" >
+			<div class="col-md-12">
+			 <div class="copyright-footer">
+				<p class="copyright color-text-a">
+				  © Copyright
+				  <span class="color-a">OurClientSuccess</span> All Rights Reserved.
+				<br>
+				Developed by  <a  href="#" title="This website" style="color:#33b5e5;text-decoration:none">OurClientSuccess</a>
+			  </div>
+			</div>
+		  </div>
+		
+	  </footer>
+	<!--/ footer section End/-->
+	<!-- Modal -->
+		<div class="modal-main">
+			<div class="col-md-8 offset-md-2 modal-container" >
+				<div class="modal-div animated zoomIn">
+					<div class="modal-div-body">
+						<i  class="modal-close-btn fa fa-times-circle-o"></i>
+						<div class="modal-contant-val">	</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- Modal End -->
+
+
+
 </body>
+
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+
+	
+	<!-- smooth scrolling -->
+	
+	function scrolldiv(obj){
+		$('html, body').animate({
+			scrollTop: $("#"+obj).offset().top
+		}, 2000);
+	}
+	
+	function topFunction() 
+	{
+
+		$("html, body").animate({ scrollTop: 0 }, 1200);
+		return false;
+
+	}
+	
+	$(document).ready(function(){
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			
+			document.getElementById("topBtn").style.display = "block";
+		} 
+	else{
+			document.getElementById("topBtn").style.display = "none";
+		}
+	})
+	
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20|| document.documentElement.scrollTop > 20) {
+			document.getElementById("topBtn").style.display = "block";
+		} else {
+			document.getElementById("topBtn").style.display = "none";
+		}
+	}
+	<!-- smooth scrolling End-->
+
+
+
+
+</script>
